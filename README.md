@@ -1,4 +1,7 @@
 # Guildr
+[![MIT License](https://img.shields.io/github/last-commit/akimbo7/Guildr?color=%23533B4D&style=flat-square)](https://github.com/akimbo7/Guildr)
+[![MIT License](https://img.shields.io/github/repo-size/akimbo7/Guildr?color=%23F564A9&style=flat-square)](https://github.com/akimbo7/Guildr)
+[![MIT License](https://img.shields.io/github/repo-size/akimbo7/Guildr?color=%23FAE3C6&style=flat-square)](https://github.com/akimbo7/Pirtul/releases)
 
 A simple API Wrapper for Guilded.
 
