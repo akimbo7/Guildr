@@ -47,7 +47,7 @@ class Client:
         print(f'{color}{text}{Fore.RESET}')
 
 
-    def login(self, email, password):
+    def login(self, email=None, password=None):
 
         payload = {
         'email': f'{email}',
