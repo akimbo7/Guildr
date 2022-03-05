@@ -115,7 +115,7 @@ class Client:
         return userData['teams'][0]['roleIds'][0]
 
 
-    def getServerHomeID(self):
+    def getHomeServerID(self):
 
         response = self.session.get('https://www.guilded.gg/api/me?isLogin=false&v2=true')
 
@@ -142,7 +142,7 @@ class Client:
                 'userIds': 'null',
                 'users': []}
 
-        response = self.session.post(f'https://www.guilded.gg/api/teams/{self.getServerHomeID()}/groups', json = payload)
+        response = self.session.post(f'https://www.guilded.gg/api/teams/{self.getHomeServerID()}/groups', json = payload)
 
         if self.log:
             self.logging('post', response.json())
@@ -155,7 +155,7 @@ class Client:
 
     def leaveGuild(self, guildID):
 
-        response = self.session.put(f'https://www.guilded.gg/api/teams/{self.getServerHomeID()}/groups/{guildID}/membership/left')
+        response = self.session.put(f'https://www.guilded.gg/api/teams/{self.getHomeServerID()}/groups/{guildID}/membership/left')
 
         if self.log:
             self.logging('put', response.json())
@@ -168,7 +168,7 @@ class Client:
 
     def archiveGuild(self, guildID):
 
-        response = self.session.put(f'https://www.guilded.gg/api/teams/{self.getServerHomeID()}/groups/{guildID}/archive')
+        response = self.session.put(f'https://www.guilded.gg/api/teams/{self.getHomeServerID()}/groups/{guildID}/archive')
 
         if self.log:
             self.logging('put', response.json())
@@ -181,7 +181,7 @@ class Client:
 
     def deleteGuild(self, guildID):
 
-        response = self.session.delete(f'https://www.guilded.gg/api/teams/{self.getServerHomeID()}/groups/{guildID}')
+        response = self.session.delete(f'https://www.guilded.gg/api/teams/{self.getHomeServerID()}/groups/{guildID}')
 
         if self.log:
             self.logging('delete', response.json())
