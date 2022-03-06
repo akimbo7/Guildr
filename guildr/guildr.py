@@ -288,7 +288,7 @@ class Client:
         return response, response.json()
 
 
-    def sendMessage(self, channelID, message, isSilent, isPrivate):
+    def sendMessage(self, channelID, message, isSilent=False, isPrivate=False):
 
         payload = {"messageId":f"{uuid.uuid1()}","content":{"object":"value","document":{"object":"document","data":{},"nodes":[{"object":"block","type":"paragraph","data":{},"nodes":[{"object":"text","leaves":[{"object":"leaf","text":message,"marks":[]}]}]}]}},"repliesToIds":[],"confirmed":False,"isSilent":isSilent,"isPrivate":isPrivate}
 
