@@ -52,4 +52,4 @@ userID = client.getUserID()
 print(f'User ID: {userID}')
 ```
 
-**Check out the full feature list [here] ()**
+**Check out the full feature list [here] (https://github.com/akimbo7/Guildr/blob/main/usage/USAGE.md)**
