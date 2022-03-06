@@ -44,7 +44,7 @@ class Client:
             'delete': Fore.GREEN}
 
         color = dict.get(type)
-        print(f'{color}{text}{Fore.RESET}')
+        print(f'{color}{text}{Fore.RESET}\n')
 
 
     def login(self, email=None, password=None):
@@ -129,7 +129,7 @@ class Client:
         return userData['teams'][0]['id']
 
 
-    def createGuild(self, serverName, isPublic):
+    def createGuild(self, serverName=None, isPublic=True):
 
         payload = {
                 'avatar': None,
@@ -259,6 +259,19 @@ class Client:
 
         return response, response.json()
 
+    def useLegacyMode(self, use=False):
+
+        payload = {"userId":self.getUserID(),"useLegacyNav":use}
+
+        response = self.session.put(f'https://www.guilded.gg/api/users/{self.getUserID()}/profilev2', json = payload)
+
+        if self.log:
+            self.logging('put', response.json())
+
+        if response.status_code != 200:
+            return response.json()
+
+        return response, response.json()
 
     def sendFriendRequest(self, userID):
 
