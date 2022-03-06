@@ -2,7 +2,7 @@
 # Guildr
 [![MIT License](https://img.shields.io/github/last-commit/akimbo7/Guildr?color=%23533B4D&style=flat-square)](https://github.com/akimbo7/Guildr)
 [![MIT License](https://img.shields.io/github/repo-size/akimbo7/Guildr?color=%23F564A9&style=flat-square)](https://github.com/akimbo7/Guildr)
-[![MIT License](https://img.shields.io/github/repo-size/akimbo7/Guildr?color=%23FAE3C6&style=flat-square)](https://github.com/akimbo7/Pirtul/releases)
+[![MIT License](https://img.shields.io/github/v/release/akimbo7/Guildr?color=%23fbe3c5&style=flat-square)](https://github.com/akimbo7/Pirtul/releases)
 
 ![Logo](https://cdn.discordapp.com/attachments/935638977707376674/949768919755943946/New_Project_4.png)
 
