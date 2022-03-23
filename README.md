@@ -7,8 +7,6 @@
 
 A simple API Wrapper for Guilded.
 
-*Frequently updated!*
-
 I am not a user of Guilded, meaning I do not keep track of new Guilded updates or patches. If a function stops working as a result of this, feel free to open an issue.
 
 Enjoy :)
